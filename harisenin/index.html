@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="fontawesome-free-6.1.1-web/css/all.min.css">
+    <title>Ayam Geprek Kumlot UMS</title>
+</head>
+<body>
+
+<!-- Button To Top -->
+    <div class="top">    
+        <a href="#top"><i class="fas fa-arrow-up"></i></a>
+    </div>
+
+<!-- Header Page -->
+    <header id="top">
+        <div class="backdrop">
+            <img src="images/logokumlot.png" alt="Ayam Geprek Kumlot UMS Logo">
+            <h1>Ayam Geprek Kumlot UMS</h1>
+            <h3>Nasi Sepuasnya, Cabenya suka-suka</h3>
+        </div>
+    </header>
+
+<!-- Navbar -->
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#harga">Daftar Menu</a>
+        <a href="#location">Lokasi</a>
+        <a href="#order">Pesan Sekarang</a>
+        <a href="#contact">Kontak Kami</a>
+    </nav>
+
+<!-- Slides Show -->
+    <section id="home">
+        <div class="slideshow">
+            <div class="mySlides">
+                <img src="images/IMG_1313.jpg" style="width: 100%;">
+            </div>
+            <div class="mySlides">
+                <img src="images/IMG_1316.jpg" style="width: 100%;">
+            </div>
+            <div class="mySlides">
+                <img src="images/IMG_1317.jpg" style="width: 100%;">
+            </div>
+        </div>
+
+    <!-- History -->
+        <div class="history">
+            
+        </div>
+    </section>
+
+<!-- Daftar Menu -->
+    <div id="harga" class="content">
+        <div class="product-info">
+            <img src="images/ayamgeprek.jpg" alt="Ayam Geprek Original">
+            <h2>Ayam Geprek Original</h2>
+            <p>Harga: Rp 9.500</p>
+            <p>Ayam goreng krispi yang digeprek dengan sambal, pilih sendiri jumlah cabe yang kamu mau</p>
+        </div>
+
+        <div class="product-info">
+            <img src="images/geprekbakar.jpg" alt="Ayam Geprek Bakar">
+            <h2>Ayam Geprek Bakar</h2>
+            <p>Harga: Rp 9.500</p>
+            <p>Ayam Geprek Original yang diberi tambahan kecap lalu di bakar/torch.</p>
+        </div>
+
+        <div class="product-info">
+            <img src="images/esteh.jpg" alt="Es Teh Jumbo">
+            <h2>Es Teh Jumbo</h2>
+            <p>Harga: Rp 2.000</p>
+            <p>Es teh manis jumbo yang beneran jumbo dan segar tentunya.</p>
+        </div>
+
+        <div class="signup-form">
+            <h2>Sign Up for Updates</h2>
+            <form action="#" method="post">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                <button type="submit">Sign Up</button>
+            </form>
+        </div>
+    </div>
+
+<!-- Lokasi Kami -->
+    <section id="location">
+        <div class="maps">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3955.196182006973!2d110.76466781098995!3d-7.553575392428698!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e7a145c3c255553%3A0x81465ebd10bcdb7c!2sAyam%20Geprek%20Kumlot%20UMS!5e0!3m2!1sid!2sid!4v1705222221207!5m2!1sid!2sid" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+    </section>
+
+<!-- Footer -->
+    <footer>
+        &copy; 2024 Ayam Geprek Kumlot UMS. Semua hak dilindungi. | Ikuti Kami di<a href="https://www.instagram.com/ayamkumlot" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+    </footer>
+
+    <script>
+
+let start = 0;
+otomatis();
+
+function otomatis()
+{
+    const sliders = document.querySelectorAll(".mySlides");
+
+    for (let i = 0; i < sliders.length; i++)
+    {
+        sliders[i].style.display = "none";
+    }
+
+    if (start >= sliders.length)
+    {
+        start = 0;
+    }
+
+    sliders[start].style.display = "block";
+    start++;
+    
+    setTimeout(otomatis, 3000);
+}
+      </script>
+
+</body>
+</html>
